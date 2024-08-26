@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+        <!-- left Container -->
+        <div class="left">
+            <div class="close">
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+
+            <!-- Home and Search  -->
+            <div class="home bg-gray rounded m-1">
+                <div class="logo invert"><img src="img/Spotify-Black-Logo..svg" alt="Logo"></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg " alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="Search" id="search-icon">Search</li>
+                </ul>
+            </div>
+
+            <!-- Library Section -->
+            <div class="library bg-gray rounded m-1 p-1">
+                <div class="library-logo"><img class="invert" src="img/mylibrary-logo.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer">
+
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Safety & Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id=""
+                            data-encore-id="textLink">
+                            <span data-encore-id="type">About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/" id="" data-encore-id="textLink">
+                            <span data-encore-id="type">Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- Right side Container -->
+        </div>
+        <div class="right">
+            <div class="header bg-gray rounded m-1 p-1">
+                <div class="nav">
+
+                    <!-- Menu bar for Responsive design -->
+                    <div class="hamburgerContainer">
+                        <img width="40" class="invert hamburger" src="img/hamburger.svg" alt="">
+                        <i class="fa-solid fa-chevron-left left-arrow"></i>
+                        <i class="fa-solid fa-chevron-right right-arrow"></i>
+                    </div>
+                </div>
+
+                <!-- Login and Signup buttons -->
+                <div class="buttons">
+                    <button class="signupbtn" type="button">Sign up</button>
+                    <button class="loginbtn" type="button">Login</button>
+                </div>
+            </div>
+
+            <div class="popular-artist">
+
+                <!-- Popular artist section -->
+                <h1 class="artits">Popular artists</h1>
+                <div class="card-container">
+                    <div data-folder="ncs" class="card">
+                        <div  class="play">
+                            <i class="fa-solid fa-play play-button"></i>
+                            <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="">
+                            <h2>Pritam</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                    <div data-folder="AR_rahman" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="">
+                        <h2>A.R Rahman</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div data-folder="anirudh" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843" alt="">
+                        <h2>Anirudh</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div data-folder="DSP" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab67616100005174aa5350248841ba12e12467af" alt="">
+                        <h2>DSP</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div data-folder="ram-miriyala" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab676161000051742b06dcd4c944d353aec485a4" alt="">
+                        <h2>Ram Miriyala</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div data-folder="sid-sriram" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab67616100005174ef6a8800763bf428e85940a6" alt="">
+                        <h2>Sid Sriram</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab67616100005174c3eae1d64408df9eb83d583f" alt="">
+                        <h2>Karthik</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab67616100005174ea2b56271cf92bcff45c0ae9" alt="">
+                        <h2>SPB</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab676161000051746edbadb6029106b08fbdb14a" alt="">
+                        <h2>Sunitha</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab676161000051741edc6d40afbea5426d0cfe0f" alt="">
+                        <h2>Thaman</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+
+
+                <!-- hero songs section -->
+                <h1 class="artits distance">Hero songs</h1>
+                <div class="card-container">
+                    <div data-folder="ncs" class="card">
+                        <div  class="play">
+                            <i class="fa-solid fa-play play-button"></i>
+                            <img src="https://i.scdn.co/image/ab67616100005174f02baba3d6d02874403e8b78" alt="">
+                            <h2>Allu Arjun</h2>
+                            <p>Actor</p>
+                        </div>
+                    </div>
+                    <div data-folder="AR_rahman" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab6761610000517413f84ca33facdbb263ee5c14" alt="">
+                        <h2>Jr. NTR</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div data-folder="anirudh" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab6761610000517459e0e0699a17928c22dd4b89" alt="">
+                        <h2>Prabhas</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab6761610000517436a6b3fb778c0213209f0651" alt="">
+                        <h2>Mahesh Babu</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab6761610000517427b84262aa4d0aef4a0562c7" alt="">
+                        <h2>Ram Charan</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i2o.scdn.co/image/ab67706c0000cfa3b406d9682fe7ca2217244073" alt="">
+                        <h2>Nani</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i2o.scdn.co/image/ab67706c0000cfa323a0bbda3f2a9e6cd0592128" alt="">
+                        <h2>Surya</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab676161000051744624051fef26f472c786d7c0" alt="">
+                        <h2>Dhanush</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab676161000051742e75d29b61d67841ff952d47" alt="">
+                        <h2>MegaStar</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab6761610000517497355c264695e67b7499b908" alt="">
+                        <h2>Nagarjuna</h2>
+                        <p>Actor</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i.scdn.co/image/ab676161000051748027e0fd7781e38819c922bf" alt="">
+                        <h2>PSPK</h2>
+                        <p>Actor</p>
+                    </div>
+                </div>
+
+
+                <!-- My playlist -->
+                <h1 class="artits distance">My Playlist</h1>
+                <div class="card-container">
+                    <div data-folder="ncs" class="card">
+                        <div  class="play">
+                            <i class="fa-solid fa-play play-button"></i>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e026ff0ae5db5266feff0d5dbb9ab67616d00001e02b86bd3f91106fe04bc03d32bab67616d00001e02cd3ced79bda3d8679bad225dab67616d00001e02dd357c07d62227bbfbe69d35" alt="">
+                            <h2>Slow songs🌙</h2>
+                            <p>By Kalyan</p>
+                        </div>
+                    </div>
+                    <div data-folder="AR_rahman" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e0254f142b48177e144dc6d525aab67616d00001e026d97b3dc154dfdbe2321fb5cab67616d00001e029daa4e57258767164ab09cacab67616d00001e02e4c8c4873956522cfd52558a" alt="">
+                        <h2>Melody🎵</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div data-folder="anirudh" class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e027ce0e92fb475c9f4708dac9cab67616d00001e02cc5e50e791af07352ae2294aab67616d00001e02f97ec0cbdd33630da7b05c30ab67616d00001e02fc1852f9a7c61c5639ac33fc" alt="">
+                        <h2>Classical 🎻</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e02100ee873e5d9966a9db6c7c6ab67616d00001e025084057f6430c347c78a7043ab67616d00001e0262337a69b7cf4d14b02d50d8ab67616d00001e028fda58224d898d6ae6593734" alt="">
+                        <h2>Romantic 💖</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e02186ffc8409d3df7a70f0f05fab67616d00001e021dea2aa9556b19a62d38eb1cab67616d00001e0285efa87a5eafe030b2495b7eab67616d00001e02bea386146cb10ffb8a9b0832" alt="">
+                        <h2>Love ❤️</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://i2o.scdn.co/image/ab67706c0000cfa333418e3b02943eee7fe81711" alt="">
+                        <h2>Break up 💔</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e0267038f7285789e85996f1a96ab67616d00001e028335d4c9f1240433714f0a33ab67616d00001e02ba170d5cdc39caf25d6d3fe4ab67616d00001e02ff28fa017050ace5f35cc11f" alt="">
+                        <h2>Sad songs😔</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e024561d1da5840786a732dd049ab67616d00001e0278e7b3d3ff5ba445bf5b1014ab67616d00001e027dedde98698ea11a1098b1fcab67616d00001e02b1ced5c98975cbe32c36e6a9" alt="">
+                        <h2>Private Songs</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e0218b05380d7d58b93e6e9b4b0ab67616d00001e02587b5bf744b0f89fba9c5377ab67616d00001e02635a9ff6b8ce9dcce911c767ab67616d00001e027a4685c4b1077b26c527789f" alt="">
+                        <h2>Item Songs🔥</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e02165f48ccce8306d12287b404ab67616d00001e0216ec0b561c0599a923151df7ab67616d00001e026d8b9f085e1178348a12685dab67616d00001e02ec8e1f5da18069b24fb43694" alt="">
+                        <h2>Oora mass🔥</h2>
+                        <p>By Kalyan</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-play play-button"></i>
+                        <img src="https://mosaic.scdn.co/300/ab67616d00001e029b87d7f41d6d86d85471e4beab67616d00001e02a866cca0de3273754d327287ab67616d00001e02ef8c59ffba268daa705bf915ab67616d00001e02fa44f2423704313be7990a2b" alt="">
+                        <h2>Bhakthi 🕉️</h2>
+                        <p>By kalyan</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Playbar section -->
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo">
+
+                    </div>
+                    <div class="songbuttons">
+                        <img id="previous" src="img/prevsong.svg" alt="">
+                        <img id="play" src="img/play.svg" alt="">
+                        <img id="next" src="img/nextsong.svg" alt="">
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volume">
+                            <img width="25" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

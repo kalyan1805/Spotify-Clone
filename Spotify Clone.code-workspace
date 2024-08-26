@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../Music/pritam-songs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Spotify Clone"
+	}
+}
